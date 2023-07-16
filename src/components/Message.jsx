@@ -18,7 +18,7 @@ const Message = ({ message }) => {
     <div
       className={`flex items-center shadow-xl m-4 py-2 px-3 rounded-tl-full rounded-tr-full relative ${messageClass}`}
     >
-      <h1 className="absolute mt-[-4rem]">{user.displayName}</h1>
+      <h1 className="absolute mt-[-4rem] text-gray-500">{user.displayName}</h1>
       <h1>{message.text}</h1>
     </div>
   );

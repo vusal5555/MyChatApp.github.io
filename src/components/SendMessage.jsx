@@ -28,9 +28,12 @@ const SendMessage = () => {
   };
 
   return (
-    <form onSubmit={sendMessage} className="w-full max-w-[728px] flex text-xl">
+    <form
+      onSubmit={sendMessage}
+      className="w-full max-w-[728px] flex text-xl absolute bottom-0 mb-5"
+    >
       <input
-        className="w-[80%] md:w-full text-xl p-3 bg-gray-900 text-white outline-none border-none"
+        className=" w-[71.5%] lg:w-full text-xl p-3  bg-gray-900 text-white outline-none border-none"
         type="text"
         value={input}
         onChange={(e) => setInput(e.target.value)}

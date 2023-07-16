@@ -6,10 +6,10 @@ const Chat = () => {
   const { messages } = UserAuth();
   return (
     <div>
-      <div className="flex flex-col p-4">
+      <div className="flex flex-col p-4 ">
         {messages &&
           messages.map((message) => {
-            return <Message message={message}></Message>;
+            return <Message key={message.id} message={message}></Message>;
           })}
       </div>
     </div>
